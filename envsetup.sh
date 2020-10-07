@@ -933,6 +933,10 @@ function lunch()
       check_mu_config
     fi
 
+    echo "";
+    cat $(gettop)/build/make/wings_ascii_logo;
+    echo"";
+
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || printconfig
 }
 
